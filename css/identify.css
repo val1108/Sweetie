@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:radial-gradient(circle at center,#2b1055,#120026);
+
+    font-family:"DynaPuff", cursive;
+    overflow:hidden;
+}
+#respuesta,
+#btnResponder{
+    font-family: inherit;
+}
+#encabezado{
+    text-align:center;
+    color:white;
+    font-size:1.6rem;
+    margin: 0 5rem 1rem;
+    font-weight:700;
+    line-height:1.4;
+    margin-bottom:40px;
+    text-shadow:0 0 12px rgba(255,255,255,.25);
+}
+#pregunta{
+    text-align:center;
+    color:white;
+    font-size:1.2rem;
+    margin: 0 5rem 1rem;
+    font-weight:700;
+    line-height:1.4;
+    margin-bottom:40px;
+    text-shadow:0 0 12px rgba(255,255,255,.25);
+}
+p#mensaje {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: 500;
+    font-size:1.2rem;
+}
+#respuesta{
+    display:block;
+    width:320px;
+    max-width:80%;
+    margin:0 auto 20px;
+    padding:15px 20px;
+    border:none;
+    border-radius:15px;
+    background:rgba(255,255,255,.12);
+    color:white;
+    font-size:1rem;
+    text-align:center;
+    outline:none;
+    backdrop-filter:blur(5px);
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+#respuesta::placeholder{
+    color:rgba(255,255,255,.65);
+}
+
+#respuesta:focus{
+    background:rgba(255,255,255,.18);
+    box-shadow:
+        0 0 0 3px rgba(255,255,255,.15),
+        0 0 20px rgba(255,255,255,.25);
+}
+
+#btnResponder{
+    display:block;
+    margin:auto;
+    padding:14px 32px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(
+        135deg,
+        #39fffc,
+        #02a3b1
+    );
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(4, 168, 197, 0.35);
+}
+
+#btnResponder:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(7, 203, 221, 0.5);
+}
+
+#btnResponder:active{
+    transform:scale(.97);
+}

@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:radial-gradient(circle at center,#2b1055,#120026);
+
+    font-family:"DynaPuff", cursive;
+    overflow:hidden;
+}
+
+/* CONTENEDOR GENERAL */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+#story{
+    flex:1;
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+/* MES */
+
+#month{
+    color:white;
+    font-size:clamp(2.5rem, 6vw, 5rem);
+
+    margin-bottom:40px;
+}
+
+/* TIMELINE */
+
+#timeline{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:clamp(12px, 3vw, 40px);
+
+    width:100%;
+    margin-bottom:40px;
+}
+
+.item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:12px;
+}
+
+.item span{
+    color:white;
+    font-size:clamp(1.1rem, 3vw, 1.8rem);
+    font-weight:bold;
+}
+
+.dot{
+    width:24px;
+    height:24px;
+
+    border-radius:50%;
+
+    background:#ff6aa2;
+    opacity:.25;
+
+    transition:.3s;
+}
+
+.active-dot .dot{
+    background:#ff79ad;
+    opacity:1;
+    transform:scale(1.3);
+}
+
+/* FRASE */
+
+#phrase{
+    color:white;
+
+    width:min(90%, 800px);
+
+    font-size:clamp(1.4rem, 4vw, 2.5rem);
+    line-height:1.4;
+}
+
+/* CONTADOR */
+
+#counter{
+    margin-top:25px;
+    color:white;
+}
+
+/* FLECHAS */
+
+.controls{
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10px;
+}
+
+.controls button{
+    background:none;
+    border:none;
+
+    cursor:pointer;
+}
+
+.controls img{
+    width:32px;
+    height:auto;
+
+    transition:transform .3s ease;
+}
+
+/* IZQUIERDA */
+
+#prev img{
+    transform:rotate(180deg);
+}
+
+#prev:hover img{
+    transform:rotate(180deg) scale(1.2);
+}
+
+/* DERECHA */
+
+#next:hover img{
+    transform:scale(1.2);
+}
+#days-number{
+    font-size:4rem;
+    color:white;
+    font-weight:bold;
+}
+
+.love-counter p:first-of-type{
+    font-size:2rem;
+    color:white;
+}
+
+.love-counter p:last-of-type{
+    margin-top:15px;
+    font-size:1.5rem;
+    color:white;
+}
+.days-text{
+    color:white;
+    font-size:2rem;
+    margin-top:10px;
+}
+
+.final-message{
+    color:white;
+    font-size:1.3rem;
+    margin-top:15px;
+
+    animation:fadeIn 1s ease;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

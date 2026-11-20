@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle at center,#2b1055,#120026);
+    font-family: "DynaPuff", cursive;
+}
+
+.scene{
+    position:relative;
+}
+
+.heart{
+    font-size:180px;
+    line-height:1;
+
+    background: radial-gradient(
+        circle at 30% 30%,
+        #ff6586 0%,
+        #e61e57 10%,
+        #e71949 20%,
+        #ce113d 50%
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+
+    user-select:none;
+    cursor:pointer;
+
+    transition:transform .25s ease;
+}
+
+@keyframes pulse{
+    0%,100%{ filter:brightness(1);}
+    50%{ filter:brightness(1.2);}
+}
+
+.message{
+    position:absolute;
+    width:100%;
+    top:180px;
+    text-align:center;
+    color:white;
+    font-size:1rem;
+}
+
+.confetti{
+    position:absolute;
+    pointer-events:none;
+    border-radius:2px;
+}
