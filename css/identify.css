@@ -2,17 +2,15 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body{
-    min-height:100vh;
-
+    min-height:100dvh;
     display:flex;
     justify-content:center;
     align-items:center;
-
     background:radial-gradient(circle at center,#2b1055,#120026);
-
     font-family:"DynaPuff", cursive;
     overflow:hidden;
 }
@@ -44,7 +42,7 @@ p#mensaje {
     text-align: center;
     margin: 1.5rem;
     font-weight: 500;
-    font-size:1.2rem;
+    font-size:1.5rem;
 }
 #respuesta{
     display:block;

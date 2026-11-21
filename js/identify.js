@@ -53,7 +53,7 @@ function validarRespuesta() {
 
   if (respuestaUsuario === respuestaCorrecta) {
 
-    mensaje.textContent = "Muy bien!!";
+    mensaje.textContent = "Muy bien!!🎉";
     mensaje.style.color = "#a6ffec";
 
     indiceActual++;
@@ -62,7 +62,7 @@ function validarRespuesta() {
 
       setTimeout(() => {
         mostrarPregunta();
-      }, 1200);
+      }, 2000);
 
     } else {
 
